@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socials | Teeshan Senarathne</title>
+    <link rel="icon" href="images/profile_round.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar">
+            <div class="container nav-container">
+                <a href="index new.html" class="logo"><img src="images/profile.jpg" alt="Logo">Teeshan Senarathne<span
+                        class="accent">.</span></a>
+                <ul class="nav-links">
+                    <li><a href="index new.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="socials.html" class="active">Socials</a></li>
+                    <li><a href="daily.html">Daily Updates</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <button id="loginBtn" class="btn btn-outline">Sign In</button>
+                    <button id="signupBtn" class="btn btn-primary">Sign Up</button>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+
+        <header class="hero-section" style="height: 50vh; min-height: 400px;">
+            <div class="container hero-content">
+                <h1 class="hero-title">Stay <span class="gradient-text">Connected</span></h1>
+                <p class="hero-subtitle">Join the conversation across all platforms. Let's grow together.</p>
+            </div>
+            <div class="hero-background">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+            </div>
+        </header>
+
+        <section class="social-section">
+            <div class="container">
+                <div class="social-grid">
+                    <!-- WhatsApp -->
+                    <a href="#" target="_blank" class="social-card whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a href="https://facebook.com/profile.php?id=61553267326421&mibextid=ZbWKwL" target="_blank"
+                        class="social-card facebook">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+
+                    <!-- YouTube -->
+                    <a href="https://youtube.com/@teeshan_senarathne?si=WCTqR9GODBIh4PFp" target="_blank"
+                        class="social-card youtube">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://instagram.com/_nome_way_?igsh=MWV1NnM0Z3M2dm9zeA==" target="_blank"
+                        class="social-card instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+
+                    <!-- X (Twitter) -->
+                    <a href="#" target="_blank" class="social-card twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <span>X (Twitter)</span>
+                    </a>
+
+                    <!-- Threads -->
+                    <a href="#" target="_blank" class="social-card threads">
+                        <i class="fa-brands fa-threads"></i>
+                        <span>Threads</span>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="#" target="_blank" class="social-card linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+
+                    <!-- TikTok -->
+                    <a href="https://tiktok.com/@_teeshanaya?_t=ZS-8z8deEHypol&_r=1" target="_blank"
+                        class="social-card tiktok">
+                        <i class="fab fa-tiktok"></i>
+                        <span>TikTok</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer-content">
+                <div class="footer-brand">
+                    <h3>Teeshan Senarathne</h3>
+                    <p>&copy; 2026 All Rights Reserved.</p>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Auth Modal included -->
+        <div id="auth-modal" class="modal">
+            <div class="modal-content glass-panel">
+                <span class="close-modal">&times;</span>
+                <div class="tabs">
+                    <button class="tab-btn active" data-target="login">Sign In</button>
+                    <button class="tab-btn" data-target="signup">Sign Up</button>
+                </div>
+                <form id="login-form" class="auth-form active">
+                    <h2>Welcome Back</h2>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Sign In</button>
+                </form>
+                <form id="signup-form" class="auth-form">
+                    <h2>Join the Community</h2>
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="Create a password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

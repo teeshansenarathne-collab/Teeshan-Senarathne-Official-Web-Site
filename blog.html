@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Teeshan Senarathne</title>
+    <link rel="icon" href="images/profile_round.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar">
+            <div class="container nav-container">
+                <a href="index new.html" class="logo"><img src="images/profile.jpg" alt="Logo">Teeshan Senarathne<span
+                        class="accent">.</span></a>
+                <ul class="nav-links">
+                    <li><a href="index new.html">Home</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="socials.html">Socials</a></li>
+                    <li><a href="daily.html">Daily Updates</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <button id="loginBtn" class="btn btn-outline">Sign In</button>
+                    <button id="signupBtn" class="btn btn-primary">Sign Up</button>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+
+        <header class="hero-section" style="height: 50vh; min-height: 400px;">
+            <div class="container hero-content">
+                <h1 class="hero-title">Words & <span class="gradient-text">Thoughts</span></h1>
+                <p class="hero-subtitle">Exploring technology, life, and the stories that shape us.</p>
+            </div>
+            <div class="hero-background">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+            </div>
+        </header>
+
+        <section class="blog-section">
+            <div class="container">
+                <div class="blog-grid" id="blog-grid">
+                    <!-- Blog posts loaded via JS -->
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer-content">
+                <div class="footer-brand">
+                    <h3>Teeshan Senarathne</h3>
+                    <p>&copy; 2026 All Rights Reserved.</p>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Auth Modal included -->
+        <div id="auth-modal" class="modal">
+            <div class="modal-content glass-panel">
+                <span class="close-modal">&times;</span>
+                <div class="tabs">
+                    <button class="tab-btn active" data-target="login">Sign In</button>
+                    <button class="tab-btn" data-target="signup">Sign Up</button>
+                </div>
+                <form id="login-form" class="auth-form active">
+                    <h2>Welcome Back</h2>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Sign In</button>
+                </form>
+                <form id="signup-form" class="auth-form">
+                    <h2>Join the Community</h2>
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="Create a password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
