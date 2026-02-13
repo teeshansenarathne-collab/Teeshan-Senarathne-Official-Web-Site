@@ -1,0 +1,126 @@
+/* Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 40px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(108, 92, 231, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(108, 92, 231, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(108, 92, 231, 0);
+    }
+}
+
+@keyframes glitch {
+
+    2%,
+    64% {
+        transform: translate(2px, 0) skew(0deg);
+    }
+
+    4%,
+    60% {
+        transform: translate(-2px, 0) skew(0deg);
+    }
+
+    62% {
+        transform: translate(0, 0) skew(5deg);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Utility Classes */
+
+.fade-in-up {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.delay-300 {
+    animation-delay: 0.3s;
+}
+
+.pulse-effect {
+    animation: pulse 2s infinite;
+}
+
+.float-effect {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Scroll Animations (Triggered via JS usually, but here default application) */
+.hero-content {
+    animation: fadeInUp 1s ease-out;
+}
+
+.blog-card {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Stagger animations for cards */
+.blog-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.blog-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.blog-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.social-card {
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.social-card:nth-child(odd) {
+    animation-delay: 0.3s;
+}
+
+.social-card:nth-child(even) {
+    animation-delay: 0.5s;
+}
+
+/* Interactive Hover States */
+.btn-primary:hover {
+    animation: pulse 1s infinite;
+}
